@@ -1,0 +1,33 @@
+{
+  "name": "freelancer",
+  "version": "1.0.0",
+  "description": "Reto de código de HTML y CSS",
+  "main": "sass/mystyles.scss",
+  "directories": {
+    "doc": "docs"
+  },
+  "devDependencies": {
+    "bulma": "^0.9.4",
+    "node-sass": "^7.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "css-build": "node-sass --omit-source-map-url sass/mystyles.scss css/mystyles.css",
+    "css-watch": "npm run css-build -- --watch",
+    "start": "npm run css-watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Andu15/freelancer.git"
+  },
+  "keywords": [
+    "html",
+    "css"
+  ],
+  "author": "Andu15",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Andu15/freelancer/issues"
+  },
+  "homepage": "https://github.com/Andu15/freelancer#readme"
+}

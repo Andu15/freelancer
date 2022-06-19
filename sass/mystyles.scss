@@ -1,0 +1,153 @@
+@charset "utf-8";
+// @import "../node_modules/bulma/bulma.sass";
+// @import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+
+// Import a Google Font
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Montserrat:wght@500&family=Roboto+Slab:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
+
+// Set your brand colors
+$navy-blue: #2C3E50;
+$water-green: #18BC9C;
+$gray: #212529;
+$white: #fff;
+
+// Set your brand fonts
+$family-lato: 'Lato', sans-serif;
+$family-montserrat: 'Montserrat', sans-serif;
+
+
+// Update Bulma's global variables
+// $family-sans-serif: "Nunito", sans-serif;
+// $grey-dark: $brown;
+// $grey-light: $beige-light;
+$link: $navy-blue;
+$primary: $water-green;
+// $link: $pink;
+// $widescreen-enabled: false;
+// $fullhd-enabled: false;
+
+// Update some of Bulma's component variables
+// $body-background-color: $beige-lighter;
+// $control-border-width: 2px;
+// $input-border-color: transparent;
+// $input-shadow: none;
+
+// mixins
+@mixin star-container {
+  content: "";
+  display:block;
+  width:200px ;
+}
+
+// Import only what you need from Bulma
+@import "../node_modules/bulma/sass/utilities/_all.sass";
+@import "../node_modules/bulma/sass/base/_all.sass";
+@import "../node_modules/bulma/sass/elements/_all.sass";
+@import "../node_modules/bulma/sass/form/_all.sass";
+@import "../node_modules/bulma/sass/components/_all.sass";
+@import "../node_modules/bulma/sass/layout/_all.sass";
+@import "../node_modules/bulma/sass/grid/_all.sass";
+@import "../node_modules/bulma/sass/helpers/_all.sass";
+
+.navbar-brand__title {
+  font-weight: 900;
+}
+
+.navbar-end--item {
+  font-weight: 900;
+}
+
+
+.hero-body__title {
+  font-weight: 900;
+  font-size: 2.5rem;
+}
+
+
+.star{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 30px;
+  width: 50%;
+  margin: auto;
+}
+
+.star-container-white {
+  color: $white
+}
+
+.star-container-white::after { 
+  @include star-container;
+  border-bottom: 7px solid $white;
+}
+
+.star-container-white::before { 
+  @include star-container;
+  border-bottom: 7px solid $white;
+}
+
+.icon-star-white{
+  position: absolute;
+  z-index: 10;
+  width: 50px;
+  background-color: $water-green;
+  display: flex;
+  justify-content: center;
+}
+
+.fa-star{
+  font-size: 30px;
+}
+
+.star-container-blue {
+  color: $navy-blue
+}
+
+.star-container-blue::after {
+  @include star-container;
+  border-bottom: 7px solid $navy-blue;
+}
+
+.star-container-blue::before {
+  @include star-container;
+  border-bottom: 7px solid $navy-blue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 600px) {
+  .hero-body__title {
+    font-size: 3.2rem;
+  }
+}
+
+@media (min-width: 800px) {
+  .hero-body__title {
+    font-size: 3.7rem;
+  }
+}
+
+@media (min-width: 950px) {
+  .hero-body__title {
+    font-size: 4.5rem;
+  }
+  .star {
+    width: 30%;
+  }
+}
