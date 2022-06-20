@@ -1,33 +1,42 @@
-# Freelancer
+# Freelancer  
+Layout challenge with HTML and CSS
 
-* **Track:** _Common Core_
-* **Curso:** _Creando tu primer sitio web interactivo_
-* **Unidad:** _Maquetado web con HTML & CSS_
+## Indice
+- [Freelancer](#freelancer)
+  - [Indice](#indice)
+    - [Information:](#information)
+    - [Description:](#description)
+    - [Reference Images](#reference-images)
+    - [Workflow](#workflow)
+  - [Consideraciones](#consideraciones)
+  - [A tener en cuenta](#a-tener-en-cuenta)
+*** 
+### Information:
+  ***Theme:*** Common Core  
+  ***Autor:*** Andu15  
+  ***Created:*** 06/22  
+  ***Version:*** 1.0.0  
 
-***
+### Description: 
+This repository aims to challenge my knowledge to obtain a replica of a reference image
+Remark: the reference image does not belong to me
 
-Para completar este reto, hemos creado este repositorio boilerplate (plantilla
-inicial) con todos los recursos que necesitas. Esto incluye imágenes y
-estructura de carpetas y archivos donde colocarás tu código.
+### Reference Images
+![image1](assets/docs/fullpage.png)
 
-## Flujo de trabajo
+Note: the credits to whom it corresponds
 
-1. Debes realizar un [**fork**](https://gist.github.com/ivandevp/1de47ae69a5e139a6622d78c882e1f74)
-   de este repositorio.
+### Workflow
+1. Fork from [**freelancer**](https://github.com/Laboratoria-learning/freelancer)
+2. Clone the repository
+3. Organize project structure
+4. Ready! Here we go
 
-2. Luego deberás **clonar** tu fork en tu máquina. Recuerda que el comando a usar
-   es `git clone` y su estructura normalmente se ve así:
 
-   ```bash
-   git clone https://github.com/<nombre-de-usuario>/freelancer.git
-   ```
 
-## Objetivo
 
-El reto consiste en replicar el sitio de **Freelancer**, este será el resultado
-a lograr:
 
-![Freelancer Website](docs/fullpage.png)
+
 
 ## Consideraciones
 
