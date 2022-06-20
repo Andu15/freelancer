@@ -118,8 +118,30 @@ $primary: $water-green;
 }
 
 
+.btn-container {
+  border-radius: 5px;
+  border: 2px solid $white !important;
+  font-weight: bold;
+}
 
 
+.field__input {
+  border-style: none none ridge none;
+  box-shadow: none;
+  border-radius: 0;
+  &::placeholder {
+    color: $navy-blue;
+    opacity: 0.5;
+  }
+}
+
+.field__input--textarea {
+  resize: none;
+}
+
+.btn--send {
+  float: left;
+}
 
 
 

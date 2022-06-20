@@ -7938,6 +7938,25 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   width: 200px;
   border-bottom: 7px solid #2C3E50; }
 
+.btn-container {
+  border-radius: 5px;
+  border: 2px solid #fff !important;
+  font-weight: bold; }
+
+.field__input {
+  border-style: none none ridge none;
+  box-shadow: none;
+  border-radius: 0; }
+  .field__input::placeholder {
+    color: #2C3E50;
+    opacity: 0.5; }
+
+.field__input--textarea {
+  resize: none; }
+
+.btn--send {
+  float: left; }
+
 @media (min-width: 600px) {
   .hero-body__title {
     font-size: 3.2rem; } }
