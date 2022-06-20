@@ -1,6 +1,4 @@
 @charset "utf-8";
-// @import "../node_modules/bulma/bulma.sass";
-// @import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
 
 // Import a Google Font
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@900&display=swap');
@@ -20,20 +18,8 @@ $family-montserrat: 'Montserrat', sans-serif;
 
 
 // Update Bulma's global variables
-// $family-sans-serif: "Nunito", sans-serif;
-// $grey-dark: $brown;
-// $grey-light: $beige-light;
 $link: $navy-blue;
 $primary: $water-green;
-// $link: $pink;
-// $widescreen-enabled: false;
-// $fullhd-enabled: false;
-
-// Update some of Bulma's component variables
-// $body-background-color: $beige-lighter;
-// $control-border-width: 2px;
-// $input-border-color: transparent;
-// $input-shadow: none;
 
 // mixins
 @mixin star-container {
@@ -52,20 +38,11 @@ $primary: $water-green;
 @import "../node_modules/bulma/sass/grid/_all.sass";
 @import "../node_modules/bulma/sass/helpers/_all.sass";
 
-.navbar-brand__title {
-  font-weight: 900;
-}
-
-.navbar-end--item {
-  font-weight: 900;
-}
-
-
+/* general styles */
 .hero-body__title {
   font-weight: 900;
   font-size: 2.5rem;
 }
-
 
 .star{
   display: flex;
@@ -76,6 +53,34 @@ $primary: $water-green;
   margin: auto;
 }
 
+.fa-star{
+  font-size: 30px;
+}
+
+.field__input {
+  border-style: none none ridge none;
+  box-shadow: none;
+  border-radius: 0;
+  &::placeholder {
+    color: $navy-blue;
+    opacity: 0.5;
+  }
+}
+
+.field__input--textarea {
+  resize: none;
+}
+
+/* header */
+.navbar-brand__title {
+  font-weight: 900;
+}
+
+.navbar-end--item {
+  font-weight: 900;
+}
+
+/* star */
 .star-container-white {
   color: $white
 }
@@ -99,10 +104,6 @@ $primary: $water-green;
   justify-content: center;
 }
 
-.fa-star{
-  font-size: 30px;
-}
-
 .star-container-blue {
   color: $navy-blue
 }
@@ -117,33 +118,34 @@ $primary: $water-green;
   border-bottom: 7px solid $navy-blue;
 }
 
-
+/* btn */
 .btn-container {
   border-radius: 5px;
   border: 2px solid $white !important;
   font-weight: bold;
 }
 
-
-.field__input {
-  border-style: none none ridge none;
-  box-shadow: none;
-  border-radius: 0;
-  &::placeholder {
-    color: $navy-blue;
-    opacity: 0.5;
-  }
-}
-
-.field__input--textarea {
-  resize: none;
-}
-
 .btn--send {
   float: left;
 }
 
+.footer__title {
+  color: $white !important;
+  font-weight: 900 !important;
+}
 
+.network-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+}
+
+.network__btn {
+  border-radius: 50%;
+  border: 1px solid $white !important;
+}
 
 
 
@@ -157,11 +159,24 @@ $primary: $water-green;
   .hero-body__title {
     font-size: 3.2rem;
   }
+  .column-width {
+    width: 90%;
+    margin: auto;
+  }
 }
 
 @media (min-width: 800px) {
   .hero-body__title {
     font-size: 3.7rem;
+  }
+  .navbar.is-spaced {
+    padding: 1rem 6rem;
+  }
+  .column-width {
+    width: 85%;
+  }
+  .footer {
+    padding: 3rem 4rem;
   }
 }
 
@@ -171,5 +186,20 @@ $primary: $water-green;
   }
   .star {
     width: 30%;
+  }
+  .column-width {
+    width: 77%;
+  }
+}
+
+@media (min-width: 1035px) {
+  .column-width {
+    width: 75%;
+  }
+}
+
+@media (min-width: 1026px) {
+  .column-width {
+    width: 70%;
   }
 }

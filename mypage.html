@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/mystyles.css">
 </head>
 <body>
-  <header>
+  <header class="header">
     <nav class="navbar is-link is-fixed-top is-spaced">
       <div class="navbar-brand">
         <strong class="navbar-item is-size-4 is-family-montserrat navbar-brand__title">START BOOTSTRAP</strong>
@@ -21,13 +21,13 @@
     
       <div id="navMenu" class="navbar-menu">
         <div class="navbar-end">
-          <a href="#" class="navbar-item navbar-end--item">
+          <a href="#portfolio" class="navbar-item navbar-end--item">
             <strong class="is-size-6">PORTFOLIO</strong>
           </a>
-          <a href="#" class="navbar-item navbar-end--item">
+          <a href="#about" class="navbar-item navbar-end--item">
             <strong class="is-size-6">ABOUT</strong>
           </a>
-          <a href="#" class="navbar-item navbar-end--item">
+          <a href="#contact" class="navbar-item navbar-end--item">
             <strong class="is-size-6">CONTACT</strong>
           </a>
         </div>
@@ -46,7 +46,7 @@
       <p class="is-size-7 has-text-weight-medium is-size-6-mobile is-size-5-touch is-size-4-tablet">Web Developer - Graphic Artist - User Experience Designer</p>
     </div>
   </section>
-  <section class="hero is-medium">
+  <section id="portfolio" class="hero is-medium">
     <div class="hero-body has-text-centered">
       <h2 class="is-family-montserrat hero-body__title">PORTFOLIO</h2>
       <div class="star star-container-blue">
@@ -76,13 +76,13 @@
       </div>
     </div>
   </section>
-  <section class="hero is-medium is-primary">
+  <section id="about" class="hero is-medium is-primary">
     <div class="hero-body has-text-centered">
       <h2 class="is-family-montserrat hero-body__title">ABOUT</h2>
       <div class="star star-container-white">
         <p class="container-icon icon-star-white"><i class="fas fa-star"></i></p>
       </div>
-      <div class="columns is-desktop family-lato has-text-weight-semibold has-text-left is-size-6 has-text-weight-bold">
+      <div class="columns is-desktop family-lato has-text-weight-semibold has-text-left is-size-6 has-text-weight-bold column-width">
         <div class="column block">
           Freelancer is a free bootstrap theme
           created by Start Bootstrap. The
@@ -107,13 +107,13 @@
       </button>
     </div>
   </section>
-  <section class="hero is-medium">
+  <section id="contact" class="hero is-medium">
     <div class="hero-body has-text-centered">
       <h2 class="is-family-montserrat hero-body__title">CONTACT ME</h2>
       <div class="star star-container-blue">
         <p class="container-icon"><i class="fas fa-star"></i></p>
       </div>
-      <form>
+      <form class="column-width">
         <div class="field">
           <input class="input field__input has-text-weight-semibold" type="text" placeholder="Name">
           <input class="input field__input has-text-weight-semibold" type="email" placeholder="Email Address">
@@ -134,37 +134,50 @@
     <div class="content has-text-centered">
       <div class="columns is-desktop">
         <div class="column">
-          <h2 class="is-family-montserrat hero-body__title">LOCATION</h2>
-          <p>3481 Melrose Place Beverly Hills, CA 90210</p>
+          <h2 class="is-family-montserrat hero-body__title footer__title">LOCATION</h2>
+          <p class="is-size-6 has-text-weight-bold">3481 Melrose Place Beverly Hills, CA 90210</p>
         </div>
         <div class="column">
-          <h2 class="is-family-montserrat hero-body__title">AROUND THE WEB</h2>
-          <div>
-            <p class="image is-flex ">
-              <i class="fa fa-facebook" aria-hidden="true"></i>
-            </p>
-            <p class="image">
-              <i class="fa fa-google-plus" aria-hidden="true"></i>
-            </p>
-            <p class="image">
-              <i class="fa fa-twitter" aria-hidden="true"></i>
-            </p>
-            <p class="image">
-              <i class="fa fa-linkedin" aria-hidden="true"></i>
-            </p>
-            <p class="image">
-              <i class="fa fa-dribbble" aria-hidden="true"></i>
-            </p>
+          <h2 class="is-family-montserrat hero-body__title footer__title">AROUND THE WEB</h2>
+          <div class="network-content has-text-weight-bold">
+            <button class="button is-link network__btn">
+              <span class="icon">
+                <i class="fab fa-facebook-f"></i>
+              </span>
+            </button>
+            <button class="button is-link network__btn">
+              <span class="icon">
+                <i class="fab fa-google-plus-g"></i>
+              </span>
+            </button>
+            <button class="button is-link network__btn">
+              <span class="icon">
+                <i class="fab fa-twitter"></i>
+              </span>
+            </button>
+            <button class="button is-link network__btn">
+              <span class="icon">
+                <i class="fab fa-linkedin-in"></i>
+              </span>
+            </button>
+            <button class="button is-link network__btn">
+              <span class="icon">
+                <!-- <i class="fa fa-dribbble network__icon" aria-hidden="true"></i> -->
+                <i class="fab fa-dribbble"></i>
+              </span>
+            </button>
           </div>
         </div>
         <div class="column">
-          <h2 class="is-family-montserrat hero-body__title">ABOUT FREELANCER</h2>
-          <p>Freelance is a free to use, open source Bootstrap theme created by <span class="text-span">Start Bootstrap</span>.</p>
+          <h2 class="is-family-montserrat hero-body__title footer__title">ABOUT FREELANCER</h2>
+          <p class="is-size-6 has-text-weight-bold">Freelance is a free to use, open source Bootstrap theme created by 
+            <span class="has-text-primary">Start Bootstrap</span>.
+          </p>
         </div>
       </div>
       <div class="columns is-desktop">
         <div class="column">
-          <p class="text-copy">Copyright © Your Website 2017</p>
+          <p class="is-size-6 has-text-weight-bold">Copyright © Your Website 2017</p>
         </div>
       </div>
     </div>
