@@ -8,13 +8,15 @@
   },
   "devDependencies": {
     "bulma": "^0.9.4",
+    "gh-pages": "^4.0.0",
     "node-sass": "^7.0.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "css-build": "node-sass --omit-source-map-url sass/mystyles.scss css/main.css",
     "css-watch": "npm run css-build -- --watch",
-    "start": "npm run css-watch"
+    "start": "npm run css-watch",
+    "deploy": "gh-pages -d index.html"
   },
   "repository": {
     "type": "git",
